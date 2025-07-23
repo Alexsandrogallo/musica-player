@@ -1,0 +1,78 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+  color: #f1f1f1;
+  text-align: center;
+  padding: 60px 20px;
+  margin: 0;
+}
+
+.music-player {
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  padding: 35px 25px;
+  display: inline-block;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.music-player:hover {
+  transform: scale(1.01);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #00ffcc;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  color: #dddddd;
+}
+
+select {
+  font-size: 16px;
+  padding: 10px 14px;
+  margin: 10px auto 20px auto;
+  border-radius: 6px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  width: 70%;
+  max-width: 300px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #2ecc71;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+audio {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+p {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: 30px;
+}body {
+  font-family: 'Orbitron', sans-serif;
+}
