@@ -1,0 +1,25 @@
+<div class="music-player">
+  <h1>🎵 Mini Player Musicale</h1>
+  
+  <label for="songSelect">Scegli una canzone:</label>
+  <select id="songSelect">
+    </select>
+  
+  <br>
+  <div class="controls">
+    <button id="prevButton" onclick="playPrevSong()">⏮️ Indietro</button>
+    <button id="playPauseButton" onclick="togglePlayPause()">▶️ Play</button>
+    <button id="nextButton" onclick="playNextSong()">⏭️ Avanti</button>
+  </div>
+  
+  <p id="currentSongDisplay">Nessuna canzone in riproduzione</p>
+  
+  <audio id="audioPlayer" controls style="margin-top: 20px; width: 100%;">
+    Il tuo browser non supporta l'audio.
+  </audio>
+</div>
+
+<p class="disclaimer">
+  Questo progetto è una demo personale e non intende in alcun modo sostituire o competere con servizi come Spotify.  
+  Tutti i brani utilizzati sono royalty-free o a scopo dimostrativo.
+</p>

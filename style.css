@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+  color: #f1f1f1;
+  text-align: center;
+  padding: 60px 20px;
+  margin: 0;
+  display: flex; /* Centra il contenuto verticalmente e orizzontalmente */
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Almeno l'altezza della viewport */
+  justify-content: center;
+}
+
+.music-player {
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  padding: 35px 25px;
+  display: inline-block;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px; /* Spazio sotto il player */
+}
+
+.music-player:hover {
+  transform: scale(1.01);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif; /* Assicurati di importarlo nelle impostazioni CSS di CodePen */
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  color: #dddddd;
+}
+
+select {
+  font-size: 16px;
+  padding: 10px 14px;
+  margin: 10px auto 20px auto;
+  border-radius: 6px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  width: 70%;
+  max-width: 300px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23dddddd%22%20d%3D%22M287%2C197.3L159.2%2C69.5c-3.6-3.6-9.6-3.6-13.2%2C0L5.4%2C197.3c-3.6%2C3.6-3.6%2C9.6%2C0%2C13.2l13.2%2C13.2c3.6%2C3.6%2C9.6%2C3.6%2C13.2%2C0l110.2-110.2l110.2%2C110.2c3.6%2C3.6%2C9.6%2C3.6%2C13.2%2C0l13.2-13.2C290.6%2C206.9%2C290.6%2C200.9%2C287%2C197.3z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 18px;
+  margin: 0 5px; /* Margine orizzontale per i pulsanti */
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #2ecc71;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+#currentSongDisplay {
+  font-size: 1.1em;
+  color: #00ffcc;
+  margin-top: 15px;
+  min-height: 1.5em; /* Previene lo "sfarfallio" quando il testo cambia */
+}
+
+audio {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.disclaimer { /* Ho cambiato la classe del tag p per non sovrascrivere lo stile */
+  font-style: italic;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: 30px;
+}
+p
